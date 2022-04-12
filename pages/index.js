@@ -74,9 +74,9 @@ export default function Home() {
           </div>
         </section>
         <section className={styles.contact} id="contact">
-          <a href="https://github.com/Zoltan199" target="_blank"><i className="bi bi-github"></i>  GitHub</a>
-          <a href="https://github.com/Zoltan199" target="_blank"><i className="bi bi-linkedin"></i>  Linkedin</a>
-          <a href="https://github.com/Zoltan199" target="_blank"><i className="bi bi-envelope-fill"></i>  Email</a>
+          <a href="https://github.com/Zoltan199" target="_blank" rel="noreferrer"><i className="bi bi-github"></i>  GitHub</a>
+          <a href="https://github.com/Zoltan199" target="_blank" rel="noreferrer"><i className="bi bi-linkedin"></i>  Linkedin</a>
+          <a href="https://github.com/Zoltan199" target="_blank" rel="noreferrer"><i className="bi bi-envelope-fill"></i>  Email</a>
         </section>
       </main>
     </>
