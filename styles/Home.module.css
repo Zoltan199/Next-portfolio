@@ -1,116 +1,219 @@
-.container {
-  padding: 0 2rem;
+.navbar{
+  position: fixed;
+  top: 0;
+  padding: 30px;
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+.navbar a{
+  padding-right: 15px;
+  text-decoration: none;
+  color: #ECF0F1;
+  font-size: 16px;
+  margin-right: 20px;
+  font-weight: 600;
+}
+
+.navbar i{
+  color:#ECF0F1;
+}
+
+.navbar a:hover{
+  color: #ECF0F1;
+  font-size: 17px;
+  background-color: var(--main-green);
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.navbar i:hover{
+  color: var(--main-white);
+  font-size: 17px;
+  background-color: var(--main-green);
+  border-radius: 10px;
+  padding: 8px;
+}
+
+
+.welcomesection{
+  height: 100vh;
+  border-bottom: 15px solid var(--main-green);
+}
+
+.personalcard{
+  border: 5px solid var(--main-green);
+  background-color: var(--secondary-white);
+  width: 50vw;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  margin: 0 auto;
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.personalcard h1{
+  text-align: center;
+  font-size: 50px;
+  color: var(--secondary-green);
+  font-family: 'Francois One', sans-serif;
+  margin: 35px 0 15px 0;
+}
+
+.personalcard p{
+  text-align: center;
+  margin-bottom: 55px;
+  color: var(--main-green);
+}
+
+.personalcard .cardimg{
+  border: 2px solid var(--secondary-green);
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  background-image: url('../public/images/PP.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 25px;
+
+}
+
+.projects{
+  padding-bottom: 100px;
+  background-color: var(--secondary-green);
+  border-bottom: 15px solid var(--main-green);
+}
+
+.projectsgrid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  justify-content: center;
+  grid-auto-rows: 300px;
+  margin: 0 50px;
+}
+
+.projects h2{
+  text-align: center;
+  color: var(--main-yellow);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  padding: 80px 0 50px 0;
+}
+
+.projecttile{
+  box-shadow: -1px 0px 10px -3px rgba(0,0,0,0.44);
+  -webkit-box-shadow: -1px 0px 10px -3px rgba(0,0,0,0.44);
+  -moz-box-shadow: -1px 0px 10px -3px rgba(0,0,0,0.44);
+  border-bottom-right-radius: 5%;
+  border-bottom-left-radius: 5%;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
+.projecttile a{
   text-decoration: none;
+  color: var(--secondary-green);
+  font-weight: 600;
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+.projecttile p{
+  background-color: var(--secondary-white);
+  height: 35px;
+  padding-top: 10px;
 }
 
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
+.projecttile:nth-child(1){
+  background-image: url('https://www.cimmyt.org/content/uploads/2020/12/Borlaug-Sonora.jpg');
 }
 
-.title,
-.description {
-  text-align: center;
+.projecttile:nth-child(2){
+  background-image: url('https://i.postimg.cc/Kz5fttpN/1.png');
 }
 
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
+.projecttile:nth-child(3){
+  background-image: url('https://i.postimg.cc/jjxLLNNK/2.png');
 }
 
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+.projecttile:nth-child(4){
+  background-image: url('https://i.postimg.cc/Z5zJm5pG/1.png');
 }
 
-.grid {
+.projecttile:nth-child(5){
+  background-image: url('https://i.postimg.cc/B69tSnjw/2.png');
+}
+
+.projecttile:nth-child(6){
+  background-image: url('https://i.postimg.cc/sxxkbpVF/3.png');
+}
+
+.projecttile:nth-child(7){
+  background-image: url('https://i.postimg.cc/s2zt3FV4/1.png');
+}
+
+.projecttile:nth-child(8){
+  background-image: url('https://i.postimg.cc/PqM0x6Js/4.png');
+}
+
+.projecttile:nth-child(9){
+  background-image: url('https://i.postimg.cc/1XbjT2C6/5.png');
+}
+
+
+
+.contact{
+  width: 100%;
+  height: 100px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
+  align-items: center;
 }
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
+.contact a{
   text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+  color: black;
+  font-weight: bolder;
+  font-size: 18px;
+  margin: 0 20px;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+
+@media (max-width: 942px){
+  .projectsgrid{
+   display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  justify-content: center;
+  grid-auto-rows: 300px;
+    }
+  .welcomesection{
+    height: 65vh;
+  }
 }
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+@media (max-width: 500px){
+  .projectsgrid{
+   display: grid;
+  grid-template-columns: minmax(320px, 300px);
+  gap: 25px;
+  justify-content: center;
+  grid-auto-rows: 300px;
+    }
+  .welcomesection{
+    height: 65vh;
+  }
+  #navbar a{
+    display: none;
+  }
+  #navbar i{
+    color: var(--main-white);
+    margin-right: 25px;
+    font-size: 20px;
   }
 }
